@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    class Rectangle {
+        constructor(height, width) {
+            this.height = height;
+            this.width = width;
+        }
+    }
+
+    const obj = new Rectangle(13, 10);
+    const obj2 = new Rectangle(4, 9);
+
+    document.write("Property of instance1: ", "obj.height -> ", obj.height, " obj.width -> ", obj.width, "<br/>");
+    document.write("Property of instance2: ", "obj2.height -> ", obj2.height, " obj2.width -> ", obj2.width, "<br/>");
+
+    obj.height = 9;
+    obj.width = 7;
+    document.write("Updated property of instance1: ", "obj.height -> ", obj.height, " obj.width -> ", obj.width, "<br/>");
+
+
+</script>
+
+</html>

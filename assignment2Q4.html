@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    Array.prototype.custMap = function (callback) {
+        // this refers to the array on whichmymap is done. this is the array itself.
+        const resultArray = [];
+        for (let index = 0; index < this.length; index++) {
+            resultArray.push(callback(this[index], index, this));
+        }
+        return resultArray;
+    }
+
+    var arr = [1, 2, 3, 4, 5];
+    var output = arr.custMap(num => num ** 2);
+    document.write(output)
+</script>
+
+</html>

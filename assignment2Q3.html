@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var arr = [1, 3, 5, 4, 2];
+    let i = 0;
+    function isEven(num) {
+        return num % 2 == 0;
+    }
+    function find(arr, isEven) {
+        while (i < 5) {
+            if (isEven(arr[i])) {
+                break
+            }
+            i++;
+        }
+        return arr[i];
+    }
+    document.write(arr, " ------>")
+    document.write("The value is: ", find(arr, isEven));
+</script>
+
+</html>

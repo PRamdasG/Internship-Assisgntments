@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    function largest(array) {
+        let max = array[0];
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        return max;
+    }
+    function smallest(array) {
+        let min = array[0];
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }
+        return min;
+    }
+    function sum(array) {
+        let add = 0;
+        for (let i = 0; i < array.length; i++) {
+            add += array[i];
+        }
+        return add;
+    }
+    function avg(array) {
+        let add = 0;
+        for (let i = 0; i < array.length; i++) {
+            add += array[i];
+        }
+        return add / 100;
+    }
+
+    const array = Array(100).fill().map(() => 1000 * Math.random());
+    document.write("Array of random numbers: ", array, "<br/>");
+    document.write("Max element is: ", largest(array), "<br/>");
+    document.write("Min element is: ", smallest(array), "<br/>");
+    document.write("Sum element is: ", sum(array), "<br/>");
+    document.write("Avg element is: ", avg(array), "<br/>");
+</script>
+
+</html>

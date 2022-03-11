@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<style>
+    body {
+        margin: 30px;
+    }
+</style>
+
+<body>
+    <table id="myTable" border="1"></table>
+    <form>
+        <input type="button" onclick="createTable()" value="Create the table">
+    </form>
+</body>
+<script>
+    function createTable() {
+        row = parseInt(window.prompt("Input number of rows"));
+        col = parseInt(window.prompt("Input number of columns"));
+
+        for (let i = 0; i < row; i++) {
+            var x = document.getElementById("myTable").insertRow(i);
+
+            for (let j = 0; j < col; j++) {
+                var y = x.insertCell();
+                y.innerHTML = "Row-" + i + "Column" + j;
+            }
+        }
+    }
+</script>
+
+</html>

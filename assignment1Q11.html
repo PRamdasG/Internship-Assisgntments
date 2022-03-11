@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const reverse = function (arr) {
+        let newArr = [];
+        let i = arr.length;
+        while (i > 0) {
+            newArr.push(arr[i]);
+            i--;
+        }
+    }
+    arr = [1, 2, 3, 4, 5];
+    document.write("Orignal Array: ", arr, "<br/>")
+    document.write("Reversed Array: ", arr.reverse());
+</script>
+
+</html>

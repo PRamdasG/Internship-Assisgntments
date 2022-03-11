@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment </title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function person(fname, lname, age, skills, dateofbirth, address, married, profession) {
+        this.fname = fname;
+        this.lname = lname;
+        this.age = age;
+        this.skills = skills;
+        this.dateofbirth = dateofbirth;
+        this.address = address;
+        this.married = married;
+        this.profession = profession;
+
+    }
+
+    amitabh = new
+        person("amitabh", "bachan", 76, "acting", "24/10/1996", { city: "Mumbai", pincode: "897342" }, "true", "Actor");
+    abhishekh = new
+        person("abhishekh", 52, ["nothing"], "24/09/78", "false", "actor");
+
+    var abhishekh = Object.create(amitabh);
+    var Aaradhya = Object.create(abhishekh);
+
+    print = function () {
+        // console.log(amitabh);
+        // console.log(abhishekh);
+        console.log(Aaradhya);
+    }();
+
+
+
+</script>
+
+</html>

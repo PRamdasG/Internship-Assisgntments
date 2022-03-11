@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+</head>
+
+<body>
+</body>
+<script>
+    var inputArray = []
+    var size = 5;
+    for (let i = 0; i < size; i++) {
+        inputArray[i] = prompt("Enter Element", i + 1);
+    }
+
+    var inputArray2 = []
+    var size = 5;
+    for (let i = 0; i < size; i++) {
+        inputArray2[i] = prompt("Enter Element", i + 1);
+    }
+    document.write(inputArray)
+    document.write("\n\n")
+    document.write(inputArray2)
+
+    const arr3 = inputArray.concat(inputArray2);
+    document.write("The concatenated values are: ", arr3);
+
+
+</script>
+
+</html>

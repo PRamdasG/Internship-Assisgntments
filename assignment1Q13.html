@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function sum(arr) {
+        let sumOfArrayNum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sumOfArrayNum += arr[i];
+        }
+        return sumOfArrayNum;
+    }
+
+    function sum1(arr) {
+        let sumOfArrayNum = 0;
+        let i = 0;
+        while (i < arr.length) {
+            sumOfArrayNum += arr[i];
+            i++;
+        }
+        return sumOfArrayNum;
+    }
+
+    function sum2(arr) {
+        let sumOfArrayNum = 0;
+        let i = 0;
+        do {
+            sumOfArrayNum += arr[i];
+            i++;
+        } while (i < arr.length);
+        return sumOfArrayNum;
+    }
+
+    let arr = [1, 2, 3, 4, 5];
+    document.write(arr, "<br/>");
+    document.write("Using for loop: ", sum(arr), "<br/>");
+    document.write("Using while loop: ", sum1(arr), "<br/>");
+    document.write("Using dowhile loop: ", sum2(arr));
+</script>
+
+</html>
